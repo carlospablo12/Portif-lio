@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="css/requisicaChamada.css">
+
+<head>
+    <meta charset="br-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requisição de Segunda Chamada</title>
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <header>
+                Ministério da Educação
+            </header>
+        </div>
+        <div class="form-box">
+            <h1>
+                Requisição de Segunda Chamada
+            </h1>
+            <form action="#">
+                <p>Informe os dados necessarios</p>
+                <div class="input-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Digite um email válido" required>
+                </div>
+                <div class="input-group">
+                    <label>Curso</label>
+                    <select id="curso">
+                        <option selected disabled value="">Selecione o curso</option>
+                        <option>Administração Bacharel</option>
+                        <option>Sistemas de Informação Bacharel</option>
+                        <option>Engenharia Civil Bacharel</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Periodo</label>
+                    <select id="periodo">
+                        <option selected disabled value="">Selecione o periodo</option>
+                        <option>Periodo 01</option>
+                        <option>Periodo 02</option>
+                        <option>Periodo 03</option>
+                        <option>Periodo 04</option>
+                        <option>Periodo 05</option>
+                        <option>Periodo 06</option>
+                        <option>Periodo 07</option>
+                        <option>Periodo 08</option>
+
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Código do Curso</label>
+                    <select id="codigoCurso">
+                        <option selected disabled value="">Selecione o Codigo do Curso</option>
+                        <option>01-Matemática Discreta</option>
+                        <option>02-Front End</option>
+                        <option>03-Programação Orientada a Objetos</option>
+                        <option>04-Português Instrumental</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="data">Data da Solicitção</label>
+                    <input type="date" id="date" placeholder="data da solicitação" required>
+                </div>
+                <div class="input-group">
+                    <label for="data">Data da Avaliação</label>
+                    <input type="date" id="date" placeholder="data da Avaliação" required>
+                </div>
+                <div class="input-group">
+                    <label for="text">Motivo da Falta</label>
+                    <textarea rows="6" style="width: 38em;" id="experiencia" name="experiencia"></textarea>
+
+                </div>
+                <div class="input-group">
+                    <label for="text">Anexar arquico de Comprovação</label>
+                    <input type="file" id="text" placeholder="texto" required>
+
+                </div>
+                <div class="input-group">
+                    <a href="solicitacaoAnalise.html">Cadastrar</a>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
