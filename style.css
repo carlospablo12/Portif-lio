@@ -49,11 +49,12 @@ li {
 
 /*header*/
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 0;
+  background-color: #090a1a;
 }
 
 .nav {
