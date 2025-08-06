@@ -129,6 +129,12 @@ header {
   justify-content: center;
   padding-top: 7rem;
 }
+/* Criando efeito Scrool Reavel */
+.effect-txt-header,
+.effect-img-header,
+.effect-txt-projeto {
+  visibility: hidden;
+}
 
 .home-content {
   position: relative;
@@ -160,7 +166,8 @@ header {
 }
 
 .home-text h3 {
-  position: relative;
+  position: absolute;
+
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
@@ -170,14 +177,16 @@ header {
 
 .home-text h3 {
   position: absolute;
-  top: 60%;
+  display: flex;
+  top: 0%;
   transform: translate(-50%);
   left: 50%;
   height: 2px;
+  align-items: center;
 }
 
 .home-text h3::before {
-  content: "";
+  /* content: ""; */
   position: absolute;
   top: 50%;
   transform: translate(-50%);
@@ -385,6 +394,7 @@ header {
 /*-----------CONTATO----------------------------*/
 
 #contato {
+  margin-top: 1.5rem;
   max-width: 500px;
   max-height: 500px;
   width: 450px;

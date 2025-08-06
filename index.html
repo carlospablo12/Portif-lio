@@ -10,6 +10,10 @@
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!--js-->
+    <script src="script.js" defer></script>
+    <script src="revel.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Carlos</title>
   </head>
 
@@ -38,10 +42,10 @@
     <!--home-->
     <section class="home container" id="home">
       <div class="home-content">
-        <div class="home-img">
+        <div class="home-img effect-img-header">
           <img src="img/imgDesign_3.png" alt="" />
         </div>
-        <div class="home-text">
+        <div class="home-text effect-txt-header">
           <h3>Olá, sejá bem vindo</h3>
           <h2>Eu sou o <span class="color">Carlos</span></h2>
           <p>
@@ -63,22 +67,145 @@
         </div>
       </div>
     </section>
-    <section
-      id="sec-SobreMim"
-      class="home container"
-      data-src="SobreMim.html"
-    ></section>
-    <section
-      id="sec-Servicos"
-      class="home container"
-      data-src="Servicos.html"
-    ></section>
-    <section
-      id="contato"
-      class="home contato container"
-      data-src="contato.html"
-    ></section>
-    <script src="script.js"></script>
-    <!--js-->
+    <section id="sec-SobreMim" class="home container">
+      <section class="sobreMim container" id="sobreMim">
+        <!--cabecalho heading-->
+        <h2 class="cabecalho">Sobre Mim</h2>
+        <!--tecnologia content-->
+        <div class="tecnologia effect-txt-tecnologia">
+          <div class="data">
+            <span class="subTitulo">Tecnologias</span>
+            <h2 class="tecnologias">
+              <span id="spanH"> HTML</span>,<span id="spanC"> <br />CSS</span>,
+              <span id="spanJ"><br />JAVASCRIPT </span>,
+              <span id="spanRN"><br />REACT NATIVE </span>,
+              <span id="spanCA"><br />CANVA </span>,
+              <span id="spanNJ"> <br />NODE JS</span>.
+            </h2>
+          </div>
+          <div class="sobreMim-text">
+            <p>
+              olá! meu nome é Carlos, sou estudante do curso de Sistema de
+              Informação no IFNMG.
+            </p>
+            <p>
+              Tenho 28 anos e desde pequeno sempre gostei de estar sempre
+              antenado nas tecnologias do momento. Apaixonado por tecnologia
+              desde meu primeiro "Hello, World", estou sempre em busca de
+              desafios e oportunidades de crescimento.
+            </p>
+            <p>
+              Tenho experiência prática em JavaScript, TypeScript, Node.js,
+              Express e Prisma, com foco em desenvolvimento de aplicações web.
+              Atualmente, estou me aprofundando em React.js e React Native, além
+              de aprimorar meus conhecimentos em bancos de dados relacionais
+              como MySQL e PostgreSQL.
+            </p>
+            <p>
+              Estou focado em desenvolver minhas habilidades em inglês e soft
+              skills, preparando-me para atuar no mercado de tecnologia com
+              responsabilidade e proatividade.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Projetos -->
+    <section class="projeto container" id="projeto">
+      <!--cabecalho heading-->
+      <h2 class="cabecalho effect-txt-projeto">Projetos</h2>
+      <!--projeto content-->
+      <div class="projeto-content">
+        <div class="projeto-box" id="webSite">
+          <a
+            href="Html_Pg/projeto_final/carlos.html"
+            target="_blank"
+            class="nav-link"
+            >Vem ver</a
+          >
+          <h2>Web Site</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque,
+            nemo ratione voluptatem fuga dicta ea, nostrum quos magni nam
+            quisquam, delectus molestiae non minus sunt mollitia blanditiis
+            minima vitae rem?
+          </p>
+        </div>
+        <div class="projeto-box" id="mario">
+          <a
+            href="Html_Pg/MarioJogo_html/index.html"
+            target="_blank"
+            class="nav-link"
+            >Play</a
+          >
+          <h2>Jogo Super Mario</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque,
+            nemo ratione voluptatem fuga dicta ea, nostrum quos magni nam
+            quisquam, delectus molestiae non minus sunt mollitia blanditiis
+            minima vitae rem?
+          </p>
+        </div>
+        <div class="projeto-box" id="formulario">
+          <a
+            href="Html_Pg/Formulario_cadastro/requisicaChamada.html"
+            target="_blank"
+            class="nav-link"
+            >Vem ver</a
+          >
+          <h2>Login</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque,
+            nemo ratione voluptatem fuga dicta ea, nostrum quos magni nam
+            quisquam, delectus molestiae non minus sunt mollitia blanditiis
+            minima vitae rem?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Contato -->
+    <section class="contato container" id="contato">
+      <!--cabecalho heading-->
+      <h2 class="cabecalho">Contato</h2>
+      <!-- Contato-->
+      <div class="meusContato">
+        <div class="projeto-content">
+          <div class="projeto-box" id="contato">
+            <a href="#" class="nav-link">Contato</a>
+            <h2>Whatsapp:</h2>
+            <h2>(38)9 9996-9277</h2>
+            <h2>Email:</h2>
+            <h2>
+              <a
+                class="nav-link-contato"
+                href="https://www.google.com/search?q=email&oq=email&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDINCAEQABiDARixAxiABDINCAIQABiDARixAxiABDINCAMQABiDARixAxiABDIKCAQQABixAxiABDINCAUQABiDARixAxiABDINCAYQABiDARixAxiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiPAtIBCTUyMzhqMGoxNagCCLACAQ&sourceid=chrome&ie=UTF-8"
+                target="_blank"
+                >cpdss@aluno.ifnmg.edu.br</a
+              >
+            </h2>
+
+            <h2>Linkedin:</h2>
+            <h2>
+              <a
+                class="nav-link-contato"
+                href="https://www.linkedin.com/in/carlos-pablo-429751288/"
+                target="_blank"
+                >carlos Pablo/linkeding</a
+              >
+            </h2>
+            <h2>GitHub</h2>
+            <h2>
+              <a
+                class="nav-link-contato"
+                href="https://github.com/carlospablo12/"
+                target="_blank"
+                >github.com/carlospablo12</a
+              >
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
